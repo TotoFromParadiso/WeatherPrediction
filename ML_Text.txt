@@ -1,0 +1,48 @@
+ Part 1: What Is Weather Prediction and Why It Matters
+
+Weather prediction means using data and computer models to guess what the weather will be like soon. It helps us decide what to wear, when to travel, and how to protect things like crops and houses.
+
+In the past, people watched the sky, wind, or animal behavior to guess the weather. These methods were based on experience but were often not accurate.
+
+Later, tools like thermometers and barometers made forecasts better. Then, computers allowed scientists to use math models to simulate the atmosphere and give more correct predictions.
+
+Now, thanks to machine learning and big data, we can train models to find patterns in huge amounts of weather data. This helps make faster and smarter forecasts.
+
+In my project, I use machine learning to predict the weather using real historical data. This shows how new technology improves something as old as weather forecasting.
+
+Part 2: Project Goal and Dataset
+
+The main goal of the project is to create a machine learning model that predicts weather conditions like temperature and rainfall using past data.
+
+I used weather data from OpenWeatherMap. It includes key features like temperature, humidity, air pressure, wind speed, and weather conditions.
+
+The data is sorted by date and has daily or hourly records. This is very useful for machine learning models, especially those working with time-based data.
+
+Before using the data, we cleaned it — checked for missing values and made sure everything was ready for training the model.
+
+ Part 3: Data Preparation and Model Choice
+
+First, I handled missing values — either by removing them or replacing them with averages.
+
+Next, I created new features from the date (like the month or season), turned non-numeric values (like weather descriptions) into numbers, and normalized numeric data to keep values on the same scale.
+
+I chose the Random Forest algorithm for both parts of our project:
+
+Random Forest Classifier: predicts if it will rain tomorrow.
+
+Random Forest Regressor: predicts temperature and humidity in the next hours.
+
+Random Forest is a strong choice because it works well with messy real-world data and gives good results in both classification and regression tasks.
+
+ Part 4: Results and Conclusion
+I split the data: 80% for training and 20% for testing.
+
+I trained our model on historical data, then tested it on new data. To check accuracy, I used Mean Squared Error (MSE) — a lower MSE means better predictions.
+
+The model had an MSE of 0.16 for rain prediction — a good result.
+
+I tested it using recent Tbilisi weather. It predicted “Yes” for rain, which matched with the real sky (broken clouds — often before rain).
+
+It also correctly predicted a drop in temperature and a rise in humidity during the night.
+
+In summary, this project showed how machine learning can help predict weather in a smart and realistic way. I learned how to clean data, choose features, train models, and understand the results. It also proved that AI can improve everyday things like weather forecasts.
